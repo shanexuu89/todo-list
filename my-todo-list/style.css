@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #7400b8, #80ffdb);
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh;
+  width: 100vw;
+  color: beige;
+}
+.container {
+  margin: 0 auto;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  display: grid;
+}
+form {
+  width: 100%;
+  margin-top: 2rem;
+}
+h1 {
+  font-size: 6.8rem;
+}
+
+a {
+  font-weight: 300;
+}
+span {
+  font-size: 1.2rem;
+}
+
+.todo-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  height: 50px;
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #999;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+.active {
+  font-size: 4rem;
+  transition: all 0.5s ease-in;
+}
+.icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  color: beige;
+  cursor: pointer;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 11fr 1fr;
+  text-align: left;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.tick {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tick::before {
+  content: "✓";
+  font-size: 20px;
+  display: none;
+}
+
+.done .tick::before {
+  display: inline;
+}
+
+.done span {
+  text-decoration: line-through;
+}
+
+.delete-item {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}

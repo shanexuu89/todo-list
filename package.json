@@ -1,0 +1,16 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "todo list",
+  "default": "my-todo-list/index.html",
+  "scripts": {
+    "start": "parcel my-todo-list/index.html",
+    "build": "parcel build my-todo-list/index.html --dist-dir my-todo-list/dist"
+  },
+  "author": "Yun Xu",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}
